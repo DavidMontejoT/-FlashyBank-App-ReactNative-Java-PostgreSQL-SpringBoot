@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "FlashyBank",
+    "slug": "FlashyBankMobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#BAF742"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.flashybank.app",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "FlashyBank usa Face ID para autorizar transferencias de forma rápida y segura."
+      }
+    },
+    "android": {
+      "package": "com.flashybank.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#BAF742"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "USE_FINGERPRINT",
+        "USE_BIOMETRIC"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow FlashyBank to use Face ID for secure transfers."
+        }
+      ]
+    ]
+  }
+}
